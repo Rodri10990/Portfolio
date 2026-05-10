@@ -2,6 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Rodri portfolio site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rodri10990/Portfolio.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
