@@ -11,7 +11,7 @@ export function ProjectsBentoSection() {
     <section className="container-shell py-16 sm:py-20 lg:py-24">
       <SectionReveal className="mb-8 space-y-4 sm:mb-10">
         <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">Builds & Experience</p>
-        <h2 className="text-2xl font-semibold text-white sm:text-4xl">Project Bento Grid</h2>
+        <h2 className="text-balance text-2xl font-semibold text-white sm:text-4xl">Project Bento Grid</h2>
       </SectionReveal>
 
       <div className="grid auto-rows-auto gap-4 sm:gap-5 lg:grid-cols-12 lg:items-start">
@@ -27,14 +27,14 @@ export function ProjectsBentoSection() {
             }}
             readmeProjectId="massive-ai"
           >
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-1 sm:gap-x-4">
+            <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-2 pt-1 sm:gap-x-4">
             <motion.span
               variants={{
                 rest: { opacity: 0, y: 6, scale: 0.96 },
                 hover: { opacity: 1, y: 0, scale: 1 },
               }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="inline-flex w-fit rounded-full border border-emerald-400/60 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-emerald-300"
+              className="inline-flex w-fit max-w-full rounded-full border border-emerald-400/60 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-emerald-300 sm:text-[11px] sm:tracking-[0.14em]"
             >
               AI Powered
             </motion.span>
@@ -45,7 +45,7 @@ export function ProjectsBentoSection() {
                 hover: { opacity: 1, y: 0, scale: 1 },
               }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="inline-flex w-fit rounded-full border border-emerald-400/60 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-emerald-300"
+              className="inline-flex w-fit max-w-full rounded-full border border-emerald-400/60 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-emerald-300 sm:text-[11px] sm:tracking-[0.14em]"
             >
               IOS
             </motion.span>
@@ -55,7 +55,7 @@ export function ProjectsBentoSection() {
                 hover: { opacity: 1, y: 0, scale: 1 },
               }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="inline-flex w-fit rounded-full border border-emerald-400/60 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-emerald-300"
+              className="inline-flex w-fit max-w-full rounded-full border border-emerald-400/60 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-emerald-300 sm:text-[11px] sm:tracking-[0.14em]"
             >
               Android
             </motion.span>
@@ -82,8 +82,10 @@ export function ProjectsBentoSection() {
         <SectionReveal className="lg:col-span-4" delay={0.08}>
           <BorderBeamCard
             eyebrow={
-              <div className="space-y-0.5">
-                <p className="text-xs uppercase tracking-[0.2em] text-emerald-400/85">Savings optimizer</p>
+              <div className="min-w-0 space-y-0.5">
+                <p className="break-words text-[11px] uppercase tracking-[0.16em] text-emerald-400/85 sm:text-xs sm:tracking-[0.2em]">
+                  Savings optimizer
+                </p>
                 <p className="text-[11px] font-normal tracking-[0.06em] text-emerald-400/55 normal-case">
                   budget intelligence
                 </p>
@@ -109,10 +111,10 @@ export function ProjectsBentoSection() {
             description="Years as an Operations Manager across Argentina and Ireland now fused with modern engineering skills: Python, React Native, Next.js, data visualization, and workflow automation."
             readmeProjectId="skills-box"
           >
-            <div className="flex flex-wrap gap-2 pt-2 text-xs text-emerald-300">
+            <div className="flex min-w-0 flex-wrap gap-2 pt-2 text-[11px] text-emerald-300 sm:text-xs">
               {["Operations Strategy", "Next.js", "Framer Motion", "React Native", "Python", "API Integrations"].map(
                 (skill) => (
-                  <span key={skill} className="rounded-full border border-emerald-400/40 px-2.5 py-1">
+                  <span key={skill} className="max-w-full rounded-full border border-emerald-400/40 px-2.5 py-1 [overflow-wrap:anywhere]">
                     {skill}
                   </span>
                 ),

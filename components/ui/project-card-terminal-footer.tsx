@@ -23,9 +23,9 @@ export function ProjectCardTerminalFooter({ projectId }: ProjectCardTerminalFoot
         openReadme(projectId);
       }}
     >
-      <span className="pointer-events-none inline-flex flex-wrap items-center gap-x-1 font-terminal text-xs leading-relaxed select-none sm:text-sm">
+      <span className="pointer-events-none inline-flex min-w-0 flex-wrap items-center gap-x-1 font-terminal text-xs leading-relaxed select-none sm:text-sm">
         <span className="shrink-0 text-zinc-500">guest@portfolio:~$</span>
-        <span className="text-emerald-500 transition-[text-shadow,color] duration-300 group-hover:[text-shadow:0_0_18px_rgba(16,185,129,0.55)]">
+        <span className="break-words text-emerald-500 transition-[text-shadow,color] duration-300 group-hover:[text-shadow:0_0_18px_rgba(16,185,129,0.55)]">
           cat README.md
         </span>
         <motion.span

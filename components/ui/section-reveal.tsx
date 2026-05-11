@@ -11,14 +11,15 @@ type SectionRevealProps = {
 
 export function SectionReveal({ children, className, delay = 0 }: SectionRevealProps) {
   const shouldReduceMotion = useReducedMotion();
+  const resolvedClassName = className ? `min-w-0 ${className}` : "min-w-0";
 
   if (shouldReduceMotion) {
-    return <div className={className}>{children}</div>;
+    return <div className={resolvedClassName}>{children}</div>;
   }
 
   return (
     <motion.div
-      className={className}
+      className={resolvedClassName}
       initial={{ opacity: 0, y: 36 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
