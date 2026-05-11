@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 
 export function ProjectsBentoSection() {
   return (
-    <section className="container-shell py-20 sm:py-24">
-      <SectionReveal className="mb-10 space-y-4">
+    <section className="container-shell py-16 sm:py-20 lg:py-24">
+      <SectionReveal className="mb-8 space-y-4 sm:mb-10">
         <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">Builds & Experience</p>
-        <h2 className="text-3xl font-semibold text-white sm:text-4xl">Project Bento Grid</h2>
+        <h2 className="text-2xl font-semibold text-white sm:text-4xl">Project Bento Grid</h2>
       </SectionReveal>
 
       <div className="grid auto-rows-auto gap-4 sm:gap-5 lg:grid-cols-12 lg:items-start">

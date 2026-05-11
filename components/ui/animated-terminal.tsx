@@ -119,14 +119,14 @@ export function AnimatedTerminal() {
   }, [lineIndex, charIndex]);
 
   return (
-    <div className="emerald-glow rounded-2xl border border-emerald-500/30 bg-neutral-950/95 p-5 md:p-6">
-      <div className="mb-4 flex items-center gap-2">
+    <div className="emerald-glow rounded-2xl border border-emerald-500/30 bg-neutral-950/95 p-4 sm:p-5 md:p-6">
+      <div className="mb-3 flex items-center gap-2 sm:mb-4">
         <span className="h-2.5 w-2.5 rounded-full bg-red-400/90" />
         <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/90" />
         <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/90" />
       </div>
 
-      <div className="space-y-2 font-mono text-xs text-emerald-400 sm:text-sm md:text-base">
+      <div className="space-y-2 font-mono text-[11px] text-emerald-400 sm:text-sm md:text-base">
         {visibleRows.map((row) => (
           <p key={row.key} className="leading-relaxed whitespace-pre-wrap break-words">
             {row.node}

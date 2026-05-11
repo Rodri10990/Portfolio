@@ -24,8 +24,10 @@ export function ProjectCardHighlights({ highlights }: ProjectCardHighlightsProps
       <ul className="space-y-2 sm:space-y-2.5">
         {items.map(({ key, label }) => (
           <li key={key}>
-            <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-emerald-400/95">{label}</p>
-            <p className="mt-1 text-sm leading-snug text-neutral-200">{highlights[key]}</p>
+            <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-emerald-400/95 sm:tracking-[0.2em]">
+              {label}
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-neutral-200">{highlights[key]}</p>
           </li>
         ))}
       </ul>

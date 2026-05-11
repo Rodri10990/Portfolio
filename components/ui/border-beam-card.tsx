@@ -41,7 +41,7 @@ export function BorderBeamCard({
         hover: { y: -5 },
       }}
       transition={{ duration: 0.25 }}
-      className={`group relative isolate flex h-auto w-full max-w-none flex-shrink-0 flex-col self-start overflow-hidden rounded-2xl border border-emerald-500/25 bg-neutral-950 p-6 ${className ?? ""}`}
+      className={`group relative isolate flex h-auto w-full max-w-none flex-shrink-0 flex-col self-start overflow-hidden rounded-xl border border-emerald-500/25 bg-neutral-950 p-4 sm:rounded-2xl sm:p-5 md:p-6 ${className ?? ""}`}
     >
       <motion.span
         aria-hidden
@@ -55,15 +55,17 @@ export function BorderBeamCard({
       {backdrop ? (
         <div className="pointer-events-none absolute inset-0 z-[9] overflow-hidden">{backdrop}</div>
       ) : null}
-      <div className="relative z-10 space-y-3">
+      <div className="relative z-10 space-y-2.5 sm:space-y-3">
         {eyebrow != null ? (
           typeof eyebrow === "string" ? (
-            <p className="text-xs uppercase tracking-[0.2em] text-emerald-400/85">{eyebrow}</p>
+            <p className="text-[11px] uppercase tracking-[0.18em] text-emerald-400/85 sm:text-xs sm:tracking-[0.2em]">
+              {eyebrow}
+            </p>
           ) : (
             eyebrow
           )
         ) : null}
-        <h3 className="text-xl font-semibold text-white">{title}</h3>
+        <h3 className="text-lg font-semibold leading-tight text-white sm:text-xl">{title}</h3>
         <p className="text-sm leading-relaxed text-neutral-300">{description}</p>
         {highlights ? <ProjectCardHighlights highlights={highlights} /> : null}
         {children}

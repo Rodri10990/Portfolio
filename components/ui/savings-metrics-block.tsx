@@ -66,14 +66,14 @@ export function SavingsMetricsBlock() {
       className="mt-5 flex min-h-[6.75rem] w-full flex-col justify-center py-3 sm:mt-6 sm:min-h-[7.5rem]"
       aria-hidden
     >
-      <div className="flex items-end justify-between gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
         <div>
           <p className="text-[10px] uppercase tracking-[0.18em] text-neutral-400">Spending</p>
           <p className="tabular-nums text-lg font-semibold text-neutral-200 sm:text-xl">
             {formatEuro(spendDisplay)}
           </p>
         </div>
-        <div className="text-right">
+        <div className="sm:text-right">
           <p className="text-[10px] uppercase tracking-[0.18em] text-emerald-400/75">Savings</p>
           <p className="tabular-nums text-lg font-semibold text-emerald-300 sm:text-xl">
             {formatEuro(saveDisplay)}
