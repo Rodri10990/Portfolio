@@ -27,7 +27,9 @@ export function ProjectCardHighlights({ highlights }: ProjectCardHighlightsProps
             <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-emerald-400/95 sm:tracking-[0.2em]">
               {label}
             </p>
-            <p className="mt-1 text-sm leading-relaxed text-neutral-200">{highlights[key]}</p>
+            <p className="mt-1 break-words text-sm leading-relaxed text-neutral-200 [overflow-wrap:anywhere]">
+              {highlights[key]}
+            </p>
           </li>
         ))}
       </ul>

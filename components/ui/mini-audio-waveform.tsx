@@ -12,7 +12,7 @@ export function MiniAudioWaveform() {
 
   return (
     <div
-      className="pointer-events-none -mx-6 mt-4 flex h-12 w-[calc(100%+3rem)] min-w-0 items-end sm:mt-5 sm:h-14"
+      className="pointer-events-none -mx-4 mt-4 flex h-12 w-[calc(100%+2rem)] min-w-0 items-end sm:-mx-5 sm:mt-5 sm:h-14 sm:w-[calc(100%+2.5rem)] md:-mx-6 md:w-[calc(100%+3rem)]"
       aria-hidden
     >
       {PEAKS.map((peak, i) => (

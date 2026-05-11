@@ -58,15 +58,19 @@ export function BorderBeamCard({
       <div className="relative z-10 space-y-2.5 sm:space-y-3">
         {eyebrow != null ? (
           typeof eyebrow === "string" ? (
-            <p className="text-[11px] uppercase tracking-[0.18em] text-emerald-400/85 sm:text-xs sm:tracking-[0.2em]">
+            <p className="break-words text-[11px] uppercase tracking-[0.18em] text-emerald-400/85 sm:text-xs sm:tracking-[0.2em]">
               {eyebrow}
             </p>
           ) : (
             eyebrow
           )
         ) : null}
-        <h3 className="text-lg font-semibold leading-tight text-white sm:text-xl">{title}</h3>
-        <p className="text-sm leading-relaxed text-neutral-300">{description}</p>
+        <h3 className="break-words text-lg font-semibold leading-tight text-white [overflow-wrap:anywhere] sm:text-xl">
+          {title}
+        </h3>
+        <p className="break-words text-sm leading-relaxed text-neutral-300 [overflow-wrap:anywhere]">
+          {description}
+        </p>
         {highlights ? <ProjectCardHighlights highlights={highlights} /> : null}
         {children}
       </div>
